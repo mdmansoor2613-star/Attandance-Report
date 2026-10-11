@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attendance Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="banner" class="banner" hidden></div>
+<header>
+  <h1>Condonation me nai aana Bhai logg</h1>
+  <p>II MCA ME </p>
+</header>
+<main>
+  <section>
+    <h2>Total attendance
+      <label class="target">Minimum <input id="target" type="number" min="1" max="99" value="75">%</label>
+    </h2>
+    <div class="card total" id="overall"></div>
+    <div class="insights" id="insights"></div>
+    <div class="subjects" id="subjects"></div>
+  </section>
+  <section>
+    <h2>Daily <small id="dayLabel"></small></h2>
+    <div class="daybar" id="daybar">
+      <button data-a="prev">‹ Prev</button>
+      <button data-a="today">Today</button>
+      <button data-a="next">Next ›</button>
+      <button data-a="all">All present</button>
+      <button data-a="hol" id="hol">Mark holiday</button>
+    </div>
+    <div class="periods" id="periods"></div>
+    <h2>Calendar</h2>
+    <div class="card" id="cal"></div>
+    <h2>Calculator</h2>
+    <div class="card calc">
+      <label>Subject <select id="cSub"></select></label>
+      <label>Total classes <input id="cT" type="number" min="0" value="0"></label>
+      <label>Attended classes <input id="cA" type="number" min="0" value="0"></label>
+      <button id="cFill" type="button">Use my current numbers</button>
+      <output id="cOut"></output>
+    </div>
+  </section>
+</main>
+<footer>DONE BY MANSOOR</footer>
+<script src="script.js"></script>
+</body>
+</html>
